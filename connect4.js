@@ -149,3 +149,25 @@ function checkForWin() {
 
 makeBoard();
 makeHtmlBoard();
+
+
+
+
+class Game {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+    currPlayer = 1; // Should we put 'this' in front of currPlayer and/or board?
+    board = [];
+  }
+  
+  makeBoard() {
+    for (let y = 0; y < this.height; y++) {
+      this.board.push(Array.from({ length: this.width }));
+    }
+  }
+
+
+
+
+}
